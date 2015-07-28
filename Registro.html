@@ -3,30 +3,23 @@
 <head>
 	<title>REGISTRO GAME-ADICTS</title>
 </head>
- <link type="text/css" rel="stylesheet"  href="css/materialize.min.css"  media="screen,projection"/>
- <script  href="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
- <script type="" rel="stylesheet"  href="js/alertify.min.js"></script>
-
- <link rel="stylesheet" type="text/css" href="css/alertify.core.css"/>
- <link rel="stylesheet" type="text/css" href="css/alertify.default.css"/>
-
-
+ <link type="text/css" rel="stylesheet"  href="css/app.css"  media="screen,projection"/>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
+ <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <body>
-
 
 	<section id="form" class="card-panel #43a047 green darken-1">
 		<p id="titulo">Crear Cuenta</p>
 		<form name="FormReg" id="Formulario" method="Ingreso.php" >
+			<input type="text" name="nombre" placeholder="Nombre"><br><br>
+			<input type="text" name="apellido" placeholder="Apellido"><br><br>
+			Fecha Nacimiento<input type="date" name="fnac"><br><br>
+			<input type="email" name="email" placeholder="Email"><br><br>
+			<input type="Password" name="pass" placeholder="Contrase&ntilde;a"><br><br>
+			<input id="BotonSend"type="button" value="Enviar" class="btn-rp btn-large" onclick="ValidarFormReg()">
+    </form>
 
-		<input type="text" name="nombre" placeholder="Nombre"><br><br>
-		<input type="text" name="apellido" placeholder="Apellido"><br><br>
-		Fecha Nacimiento<input type="date" name="fnac"><br><br>
-		<input type="email" name="email" placeholder="Email"><br><br>
-		<input type="Password" name="pass" placeholder="Contrase&ntilde;a"><br><br>
-		<input id="BotonSend"type="button" value="Enviar" class="btn-rp btn-large" onclick="ValidarFormReg()">
-       </form>
 		<script type="text/javascript" src="js/Validaciones.js"></script>
-
 	</section>
 
 

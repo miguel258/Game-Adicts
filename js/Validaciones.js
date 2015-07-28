@@ -1,45 +1,33 @@
-function Validar(){
+function Validar() {
 
-	var User=document.F1.User.value;
-	var Pass=document.F1.Pass.value;
+	var User = document.F1.User.value;
+	var Pass = document.F1.Pass.value;
 	// var Cel=document.Form1.TxtCelular.value;
-	 var Div=document.getElementById("Resultado");
+	 var Div = document.getElementById("Resultado");
 	// var Ec=document.Form1.TxtEstado.value;
 
-	
+	if(User === '' || Pass === '') {
+		alert("faltan datos");
 
-	 if(User === '' || Pass === ''){
-	 	alert("faltan datos");
-
-     } else {
-			
-			document.F1.submit();
+  } else {
+		document.F1.submit();
 	}
 }
-function ValidarFormReg(){
-	
-	var Nom=document.FormReg.nombre.value;
-	var Apellido=document.FormReg.apellido.value;
-	var Fnac=document.FormReg.fnac.value;
-	var EMail=document.FormReg.email.value;
-	var Pass=document.FormReg.pass.value;
 
-	if(Nom=="" || Apellido=="" || Fnac=="" ||EMail=="" || Pass==""){
+function ValidarFormReg(){
+
+	var Nom      = document.FormReg.nombre.value;
+	var Apellido = document.FormReg.apellido.value;
+	var Fnac   	 = document.FormReg.fnac.value;
+	var EMail		 = document.FormReg.email.value;
+	var Pass		 = document.FormReg.pass.value;
+
+	if(Nom === "" || Apellido === "" || Fnac === "" || EMail === "" || Pass === "") {
 		$(document).ready(function(){
-			alertify.alert("faltan campos");
+			alert("faltan campos");
 		});
 
-				
-		
-
-    
-		
-	}else{
+	} else {
 		document.FormReg.submit();
 	}
-
-
-
-
 }
-
