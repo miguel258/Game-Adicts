@@ -144,3 +144,13 @@ input[type="text"],input[type="password"],input[type="email"],input[type="date"]
 span {
   color: white;
 }
+#formLog{
+  height: 350px;
+  width: 400px;
+  position: absolute;
+  left: 470px;
+
+}
+#BotonLoggin{
+  left: 100px;
+}
